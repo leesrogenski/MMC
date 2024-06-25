@@ -1,6 +1,7 @@
 let numero1
 let numero2
 
+// Pedir para o usuário digitar dois números: 
 console.log("Digite o primeiro numero: ");
 process.stdin.once("data", function (data){
     numero1 = Number(data.toString().trim());
@@ -26,17 +27,17 @@ process.stdin.once("data", function (data){
 
         for (i; i <= numero1 * numero2; i += maior) {
             if (i % numero1 == 0 && 1 % numero2 == 0) {
-                console.log("MMC: " + i )
-                break
+                console.log("MMC: " + i)
             }
         }
         i = menor
-        for(i; i >0; i--) {
+        for(i; i > 0; i--) {
             if(numero1 % i == 0 && numero2 % i == 0) {
                 console.log("MDC: " + i);
-                break;
             }
         }
+
         process.exit();
+        
     });
 });

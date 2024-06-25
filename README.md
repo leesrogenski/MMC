@@ -1,2 +1,2 @@
 # MMC
-MEU E DA LORE
+código para calcular mmc e mdc
